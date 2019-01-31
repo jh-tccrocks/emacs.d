@@ -1,0 +1,55 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Jan 30 14:08:48 2019
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23633 63040 330320 700000) (desktop . "208") "filis@filis-PC" nil nil ((((minibuffer . t) (undecorated) (skip-taskbar) (font-backend uniscribe gdi) (font . "-outline-DejaVu Sans Mono for Powerline-normal-normal-normal-mono-12-*-*-*-c-*-iso8859-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#eeeeec") (background-color . "#2e3436") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-focus-on-map) (no-accept-focus) (no-special-glyphs) (alpha) (menu-bar-lines . 1) (tool-bar-lines . 3) (height . 35) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 17) (scroll-bar-height . 0) (fullscreen . maximized) (z-group) (visibility . t) (display-type . color) (background-mode . dark) (cursor-color . "green") (environment) (powerline-cache) (frameset--id . "968A-5A94-5752-C5D3") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top) (width . 190) (left + -8) (top + -8)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 56) (min-pixel-width . 70) (min-pixel-height-ignore . 42) (min-pixel-width-ignore . 49) (min-pixel-height-safe . 14) (min-pixel-width-safe . 14)) leaf (pixel-width . 1366) (pixel-height . 488) (total-width . 195) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Packages*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 3 t nil 0 t) (vscroll . 0) (dedicated) (point . 85540) (start . 83970))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("+"))
+(setq regexp-search-ring nil)
+(setq register-alist '((113)))
+(setq file-name-history '("/cygdrive/c/Users/filis/git/tcc-pos/modules/Commerce/src/com/tcc/commerce/order/TCCCommerceItemManager.java" "/cygdrive/c/Users/filis/git/tcc-pos/buildtools/jboss-servers/store.xml" "/home/filis/.emacs"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/cygdrive/c/Users/filis/git/tcc-pos/modules/Commerce/src/com/tcc/commerce/order/TCCCommerceItemManager.java"
+  "TCCCommerceItemManager.java"
+  'java-mode
+  '(abbrev-mode visual-line-mode override-global-mode global-auto-revert-mode highlight-indent-guides-mode undo-tree-mode evil-goggles-mode)
+  11553
+  '(11553 nil)
+  nil
+  nil
+  '((buffer-display-time 23632 50869 585085 800000) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (truncate-lines))
+  '((mark-ring (1122 1674 35890 35891 1 35653 9965 34168 35839 35019 33928 34839))))
+
+(desktop-create-buffer 208
+  "/cygdrive/c/Users/filis/git/tcc-pos/buildtools/jboss-servers/store.xml"
+  "store.xml"
+  'nxml-mode
+  '(visual-line-mode override-global-mode global-auto-revert-mode highlight-indent-guides-mode undo-tree-mode evil-goggles-mode)
+  2166
+  '(2166 nil)
+  nil
+  nil
+  '((buffer-display-time 23631 57332 653759 200000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (1464 1464 434 435 562 668 671 673 25769 25770 25114 25065 25065 25065 25065 2083))))
+
+(desktop-create-buffer 208
+  nil
+  "*info*"
+  'Info-mode
+  '(visual-line-mode override-global-mode global-auto-revert-mode undo-tree-mode evil-goggles-mode)
+  9370
+  '(9370 nil)
+  t
+  '("/usr/share/info/emacs" "Top" ((history ("/usr/share/info/emacs" "Mark" 180401) ("/usr/share/info/emacs" "Help Echo" 179521) ("/usr/share/info/emacs" "Help Files" 177933) ("/usr/share/info/emacs" "Misc Help" 175111) ("/usr/share/info/emacs" "Language Help" 174055) ("/usr/share/info/emacs" "Package Keywords" 172908) ("/usr/share/info/emacs" "Help Mode" 170778) ("/usr/share/info/emacs" "Apropos" 166538) ("/usr/share/info/emacs" "Name Help" 163691) ("/usr/share/info/emacs" "Key Help" 162469) ("/usr/share/info/emacs" "Help Summary" 158723) ("/usr/share/info/emacs" "Help" 156067) ("/usr/share/info/emacs" "Mark" 180401) ("/usr/share/info/emacs" "Help" 157351) ("/usr/share/info/emacs" "M-x" 152544) ("/usr/share/info/emacs" "Minibuffer" 119015) ("/usr/share/info/emacs" "Basic Minibuffer" 119616) ("/usr/share/info/emacs" "Minibuffer" 118627) ("/usr/share/info/emacs" "Repeating" 117400) ("/usr/share/info/emacs" "Arguments" 113156) ("/usr/share/info/emacs" "Position Info" 109373) ("/usr/share/info/emacs" "Continuation Lines" 107068) ("/usr/share/info/emacs" "Blank Lines" 105657) ("/usr/share/info/emacs" "Basic Help" 105160) ("/usr/share/info/emacs" "Basic Files" 103768) ("/usr/share/info/emacs" "Basic Help" 105160) ("/usr/share/info/emacs" "Basic Files" 103768) ("/usr/share/info/emacs" "Basic Undo" 102569) ("/usr/share/info/emacs" "Erasing" 100338) ("/usr/share/info/emacs" "Moving Point" 93970) ("/usr/share/info/emacs" "Inserting Text" 89226) ("/usr/share/info/emacs" "Moving Point" 95147) ("/usr/share/info/emacs" "Inserting Text" 89226) ("/usr/share/info/emacs" "Basic" 88119) ("/usr/share/info/emacs" "Inserting Text" 89226) ("/usr/share/info/emacs" "Basic" 88119) ("/usr/share/info/emacs" "Exiting" 85087) ("/usr/share/info/emacs" "Entering Emacs" 81510) ("/usr/share/info/emacs" "Commands" 79191) ("/usr/share/info/emacs" "Keys" 76762) ("/usr/share/info/emacs" "User Input" 74261) ("/usr/share/info/emacs" "Menu Bar" 71986) ("/usr/share/info/emacs" "Mode Line" 65984) ("/usr/share/info/emacs" "Echo Area" 63141) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Screen" 58625) ("/usr/share/info/emacs" "Intro" 56612) ("/usr/share/info/emacs" "Distrib" 53842) ("/usr/share/info/emacs" "Top" 1138) ("/usr/share/info/emacs" "Distrib" 55310) ("/usr/share/info/emacs" "Intro" 57988) ("/usr/share/info/emacs" "Screen" 61298) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Screen" 58625) ("/usr/share/info/emacs" "Intro" 56612) ("/usr/share/info/emacs" "Screen" 61298) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Screen" 58625) ("/usr/share/info/emacs" "Intro" 56612) ("/usr/share/info/emacs" "Screen" 61298) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Echo Area" 63141) ("/usr/share/info/emacs" "Mode Line" 65984) ("/usr/share/info/emacs" "Echo Area" 63141) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Screen" 58625) ("/usr/share/info/emacs" "Point" 61607) ("/usr/share/info/emacs" "Echo Area" 63141) ("/usr/share/info/emacs" "Mode Line" 65984) ("/usr/share/info/emacs" "Menu Bar" 73382) ("/usr/share/info/emacs" "User Input" 75797) ("/usr/share/info/emacs" "Keys" 78779) ("/usr/share/info/emacs" "Commands" 80610) ("/usr/share/info/emacs" "Entering Emacs" 81510) ("/usr/share/info/emacs" "Exiting" 85087) ("/usr/share/info/emacs" "Entering Emacs" 81510) ("/usr/share/info/emacs" "Commands" 79191) ("/usr/share/info/emacs" "Entering Emacs" 81510) ("/usr/share/info/emacs" "Commands" 79191) ("/usr/share/info/emacs" "Keys" 78239) ("/usr/share/info/emacs" "User Input" 75797) ("/usr/share/info/emacs" "Screen" 60269) ("/usr/share/info/emacs" "User Input" 75797) ("/usr/share/info/emacs" "Screen" 60124) ("/usr/share/info/emacs" "Intro" 56612) ("/usr/share/info/emacs" "Distrib" 53842) ("/usr/share/info/emacs" "Top" 1138))))
+  '((tab-width . 8) (buffer-display-time 23631 55086 114168 100000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (case-fold-search . t) (truncate-lines))
+  '((mark-ring (9418 9677 9677 180330 178980 176484 177470 177471 176484 176484 158518 158518 1502572 1453601 1453656 1454293))))
+

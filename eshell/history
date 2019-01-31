@@ -1,0 +1,7 @@
+cd
+pwd
+winhome
+ps aux
+la
+ls -A
+ls -Al
