@@ -1,0 +1,1 @@
+("~/.emacs.d/" "/cygdrive/c/Users/filis/git/tcc-pos/" "~/Documents/resume/")

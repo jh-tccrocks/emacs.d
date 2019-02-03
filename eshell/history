@@ -5,3 +5,23 @@ ps aux
 la
 ls -A
 ls -Al
+pwd
+cd ..
+la
+ls -al
+pwd -v
+find-file store.bat
+ls -al
+winhome
+cd /cygdrive/c/Users/filis/git/tcc-pos/
+ls -al
+ls -a
+ls -A
+gst
+git status
+ls
+ls -A
+cd buildtools/scripts/
+ls
+dired
+dired .
