@@ -1,8 +1,8 @@
 
 ;; Added by Package.el.
-;; This must come before configurations of installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.  You may delete these explanatory comments.
+;; This must come before configurations of installed packages.  Don't delete this line.
 (require 'package)
+
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 ;(add-to-list 'package-archives '("melpa-stable" . "https://melpa.org/packages/") t)
 ;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -19,10 +19,11 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(display-battery-mode t)
  '(display-time-mode t)
+ '(evil-collection-setup-minibuffer t)
  '(flycheck-display-errors-function (function flycheck-pos-tip-error-messages))
  '(package-selected-packages
    (quote
-    (evil-matchit git-gutter web-beautify company helm-projectile projectile helm emacs-neotree all-the-icons latex-preview-pane flycheck highlight-indent-guides auto-package-update dtrt-indent indent-guide evil-nerd-commenter powerline-evil evil-leader key-chord powerline evil-surround evil-goggles evil-expat evil-visualstar evil-replace-with-register evil-collection use-package evil)))
+    (neotree evil-matchit git-gutter web-beautify company helm-projectile projectile helm all-the-icons latex-preview-pane flycheck highlight-indent-guides auto-package-update dtrt-indent indent-guide evil-nerd-commenter powerline-evil evil-leader key-chord powerline evil-surround evil-goggles evil-expat evil-visualstar evil-replace-with-register evil-collection use-package evil)))
  '(show-paren-mode t))
 
 (custom-set-faces
@@ -82,8 +83,8 @@
              (use-package evil-collection
                           :after evil
                           :ensure t
-              :custom (evil-collection-setup-minibuffer t)
-              :config
+                          :custom (evil-collection-setup-minibuffer t)
+                          :config
                           (evil-collection-init))
 
              ;; gr operator, like vim's ReplaceWithRegister
@@ -190,10 +191,9 @@
              (setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers))
              (setq flycheck-checkers (delq 'html-tidy flycheck-checkers))
              (setq flycheck-standard-error-navigation nil)
-             (add-hook 'after-init-hook #'global-flycheck-mode))
+             (add-hook 'after-init-hook #'global-flycheck-mode)
+             (global-flycheck-mode t))
 
-
-(global-flycheck-mode t)
 
 ;; flycheck errors on a tooltip (doesnt work on console)
 (when (display-graphic-p (selected-frame))
@@ -263,8 +263,6 @@
 
 (setq-default indent-tabs-mode nil)
 
-;(use-package indent-guide
-;(use-package highlight-indention
 (use-package highlight-indent-guides
              ;:hook prog-mode
              :ensure t;)
@@ -286,7 +284,7 @@
 (use-package all-the-icons
              :ensure t)
 
-(use-package emacs-neotree
+(use-package neotree
              :ensure t)
 
 (use-package helm
@@ -303,7 +301,7 @@
              :ensure t
              :defer t
              :config
-             (projectile-global-mode))
+             (projectile-mode))
 
 
 (use-package helm-projectile
@@ -333,9 +331,10 @@
              :ensure t)
 
 (use-package git-gutter
-             :ensure t)
+             :ensure t
+             :config
+             (global-git-gutter-mode +1))
 
-(global-git-gutter-mode +1)
 
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
@@ -345,4 +344,5 @@
       kept-new-versions 20   ; how many of the newest versions to keep
       kept-old-versions 5    ; and how many of the old
       )
+
 (put 'dired-find-alternate-file 'disabled nil)
