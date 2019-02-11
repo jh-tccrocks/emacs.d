@@ -336,6 +336,8 @@
              (global-git-gutter-mode +1))
 
 
+(use-package org
+             :ensure t)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
       backup-by-copying t    ; Don't delink hardlinks
@@ -346,3 +348,6 @@
       )
 
 (put 'dired-find-alternate-file 'disabled nil)
+
+(setq frame-title-format "%b")
+

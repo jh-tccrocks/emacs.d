@@ -1,0 +1,6 @@
+elpa/
+.emacs.desktop
+history
+places
+eshell/
+.last-package-update-day

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "/cygdrive/c/Users/filis/git/tcc-pos/" "~/Documents/resume/")
+("/cygdrive/c/Users/filis/git/tcc-pos/" "~/Documents/resume/" "~/.emacs.d/")
