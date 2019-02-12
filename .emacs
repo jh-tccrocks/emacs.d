@@ -351,3 +351,5 @@
 
 (setq frame-title-format "%b")
 
+(message "Loading init.el...done"))
+
