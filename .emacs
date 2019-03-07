@@ -351,5 +351,7 @@
 
 (setq frame-title-format "%b")
 
+(require 'midnight)
+(midnight-mode t)
 (message "Loading init.el...done"))
 
