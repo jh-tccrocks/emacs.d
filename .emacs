@@ -5,7 +5,7 @@
 
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 ;(add-to-list 'package-archives '("melpa-stable" . "https://melpa.org/packages/") t)
-;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
 
@@ -21,9 +21,10 @@
  '(display-time-mode t)
  '(evil-collection-setup-minibuffer t)
  '(flycheck-display-errors-function (function flycheck-pos-tip-error-messages))
+ '(minimap-mode nil)
  '(package-selected-packages
    (quote
-    (neotree evil-matchit git-gutter web-beautify company helm-projectile projectile helm all-the-icons latex-preview-pane flycheck highlight-indent-guides auto-package-update dtrt-indent indent-guide evil-nerd-commenter powerline-evil evil-leader key-chord powerline evil-surround evil-goggles evil-expat evil-visualstar evil-replace-with-register evil-collection use-package evil)))
+    (sublimity neotree evil-matchit git-gutter web-beautify company helm-projectile projectile helm all-the-icons latex-preview-pane flycheck highlight-indent-guides auto-package-update dtrt-indent indent-guide evil-nerd-commenter powerline-evil evil-leader key-chord powerline evil-surround evil-goggles evil-expat evil-visualstar evil-replace-with-register evil-collection use-package evil)))
  '(show-paren-mode t))
 
 (custom-set-faces
@@ -53,9 +54,6 @@
              :config
              (powerline-vim-theme))
 
-
-;;; example how to map a command in normal mode (called 'normal state' in evil)
-;(define-key evil-normal-state-map (kbd ", w") 'evil-window-vsplit))
 
 (use-package evil
              :ensure t
@@ -161,25 +159,6 @@
              (key-chord-define evil-insert-state-map  "jj" 'evil-normal-state))
 
 
-;;; esc quits
-;(defun minibuffer-keyboard-quit ()
-;"Abort recursive edit.
-;In Delete Selection mode, if the mark is active, just deactivate it;
-;then it takes a second \\[keyboard-quit] to abort the minibuffer."
-;(interactive)
-;(if (and delete-selection-mode transient-mark-mode mark-active)
-;(setq deactivate-mark  t)
-;(when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
-;(abort-recursive-edit)))
-;(define-key evil-normal-state-map [escape] 'keyboard-quit)
-;(define-key evil-visual-state-map [escape] 'keyboard-quit)
-;(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
-;(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
-;(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
-;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
-;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
-;(global-set-key [escape] 'evil-exit-emacs-state)
-
 ;(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
 ;(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
 
@@ -234,6 +213,7 @@
 
 ;; save minibuffer history
 (savehist-mode 1)
+(setq savehist-file "~/.emacs.d/savehist")
 
 (show-paren-mode t)
 ;(initial-frame-alist (quote ((fullscreen . maximized))))) ;; start maximized
@@ -251,6 +231,7 @@
 ;(require 'saveplace)
 ;(setq-default save-place t))
 ;(save-place-mode 1))
+
 ;always display line numbers
 (global-display-line-numbers-mode)
 
@@ -336,9 +317,6 @@
              (global-git-gutter-mode +1))
 
 
-(use-package org
-             :ensure t)
-
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
       backup-by-copying t    ; Don't delink hardlinks
       version-control t      ; Use version numbers on backups
@@ -351,7 +329,11 @@
 
 (setq frame-title-format "%b")
 
-(require 'midnight)
+;(require 'midnight)
 (midnight-mode t)
-(message "Loading init.el...done"))
+
+(use-package jdee
+             :ensure t)
+
+(message "Loading init.el...done")
 
